@@ -1,7 +1,7 @@
 ﻿# Example-Command-Patern
 ![image](https://github.com/user-attachments/assets/8a8da956-3958-4124-b980-801227a41b30)
 
-Invoker  класс  Comander
+Invoker  класс  Comander<br>
 Client  класс  Main
 Troop класс Resiver
 Left, Quit классы реализующие нтерфейс Command, и владеющие(принимают в конструкторе) объект Troop
