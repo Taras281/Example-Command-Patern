@@ -11,12 +11,14 @@ public class Main {
         Troop troop = new Troop();
         Command right = troop::right;
         Command easy = troop::easy;
+        Command newCom = troop::newComand;
         Command left = new Left(troop);
         Command quit = new Quit(troop);
         commanders.registerCommand("right", right);
         commanders.registerCommand("left", left);
         commanders.registerCommand("quit", quit);
         commanders.registerCommand("easy", easy);
+        commanders.registerCommand("newCom", newCom);
         try {
             commanders.execute("no command");
         }
@@ -28,6 +30,7 @@ public class Main {
             commanders.execute("right");
             commanders.execute("left");
             commanders.execute("easy");
+            commanders.execute("newCom");
         }
         catch (MyException m){
             System.out.println(m);

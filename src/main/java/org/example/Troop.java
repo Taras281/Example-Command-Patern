@@ -10,6 +10,9 @@ public class Troop {
     public void easy(){
         System.out.println("take easy");
     }
+    public void newComand(){
+        System.out.println("new command");
+    }
     public void right(){
         System.out.println("take right");
     }
